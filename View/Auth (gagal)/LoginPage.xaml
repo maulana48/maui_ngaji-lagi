@@ -1,0 +1,86 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiApplication.View.Auth.LoginPage"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="28,30,28,30">
+                <Image
+                    Source="ngajilagi.png"
+                    SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                    HeightRequest="200"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Text="“Bacalah Al Qur’an, karena ia akan datang pada hari kiamat sebagai syafa’at bagi shahibul Qur’an”"
+                    FontSize="30"
+                    FontFamily="Nunito"
+                    Margin="0,48,0,48"
+                    FontAttributes="Bold"
+                    TextColor="#313131"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center" />
+
+                <Frame BorderColor="#444"
+                    CornerRadius="24">
+                    <Entry 
+                        x:Name="email"
+                        Placeholder="email..." />
+                </Frame>
+
+                <Frame BorderColor="#444"
+                    Margin="0,12,0,48"
+                    CornerRadius="24">
+                    <Entry 
+                        x:Name="password"
+                        Placeholder="password..." />
+                </Frame>
+
+                <Button
+                    x:Name="LoginBtn"
+                    Text="Masuk"
+                    TextColor="#FFF"
+                    FontSize="20"
+                    Padding="0,20,0,20"
+                    CornerRadius="32"
+                    FontAttributes="Bold"
+                    Background="#88984A"
+                    BorderColor="#FF00FF"
+                    SemanticProperties.Hint="Test"
+                    HorizontalOptions="Fill" />
+
+                <Label
+                    Margin="0,20,0,20"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextColor="#000"
+                    HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span
+                                Text="Lupa Password?">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                                        CommandParameter="https://learn.microsoft.com/dotnet/maui/" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button
+                    x:Name="RegisterBtn"
+                    Text="Daftar Sekarang"
+                    TextColor="#000"
+                    FontSize="20"
+                    Padding="0,20,0,20"
+                    CornerRadius="32"
+                    FontAttributes="Bold"
+                    Background="#FFD53F"
+                    BorderColor="#FF00FF"
+                    HorizontalOptions="Fill" 
+                    Clicked="LupaPw1"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,1 @@
+dotnet build ./MyMauiApplication.csproj -t:Run -f net7.0-android /p:AndroidSdkDirectory=/media/hp/Data1/SDK/
